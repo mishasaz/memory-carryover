@@ -1,0 +1,12 @@
+{
+  "name": "mishasaz",
+  "owner": { "name": "mishasaz" },
+  "plugins": [
+    {
+      "name": "memory-carryover",
+      "source": "./",
+      "description": "Persistent per-project memory for Claude Code that survives context compaction and stays token-cheap.",
+      "version": "1.0.0"
+    }
+  ]
+}

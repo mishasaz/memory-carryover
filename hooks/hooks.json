@@ -1,0 +1,28 @@
+{
+  "SessionStart": [
+    {
+      "matcher": "startup|resume|clear|compact",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3",
+          "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/inject_memory.py"],
+          "timeout": 10
+        }
+      ]
+    }
+  ],
+  "PreCompact": [
+    {
+      "matcher": "manual|auto",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3",
+          "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/precompact_snapshot.py"],
+          "timeout": 10
+        }
+      ]
+    }
+  ]
+}

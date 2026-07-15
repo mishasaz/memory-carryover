@@ -1,0 +1,8 @@
+{
+  "name": "memory-carryover",
+  "version": "1.0.0",
+  "description": "Persistent per-project memory for Claude Code that survives context compaction and stays token-cheap. SessionStart and PreCompact hooks re-inject a lean memory index plus live status; a skill and slash commands keep the index lean, audited, and reliable.",
+  "author": { "name": "mishasaz" },
+  "license": "MIT",
+  "keywords": ["memory", "compaction", "hooks", "context", "tokens", "recall"]
+}
